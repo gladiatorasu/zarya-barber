@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Заря — мужская парикмахерская в Воронеже</title>
+<meta name="description" content="Мужская парикмахерская «Заря» на Левом берегу Воронежа. Стрижки, борода, бритьё. Ленинский проспект, 20/1. Ежедневно 11:00–22:00. Рейтинг 5,0 в 2ГИС.">
+<meta name="theme-color" content="#09090b">
+<!-- Превью ссылки в мессенджерах и соцсетях -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Заря — мужская парикмахерская в Воронеже">
+<meta property="og:description" content="Стрижки, борода и бритьё на Левом берегу. Ленинский пр., 20/1. Ежедневно 11:00–22:00. Рейтинг 5,0 в 2ГИС.">
+<meta property="og:image" content="https://i6.photo.2gis.com/photo-gallery/3915637b-b56b-469f-876b-ec65784ef9b2.jpg">
+<!-- Карточка организации для Яндекса и Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Заря, мужская парикмахерская",
+  "description": "Уютная атмосфера, профессионалы своего дела и индивидуальный подход",
+  "image": "https://i6.photo.2gis.com/photo-gallery/3915637b-b56b-469f-876b-ec65784ef9b2.jpg",
+  "telephone": "+7 473 249-17-18",
+  "priceRange": "400–1600 ₽",
+  "paymentAccepted": "Наличные, банковская карта, перевод, QR-код",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ленинский проспект, 20/1, 2 этаж",
+    "addressLocality": "Воронеж",
+    "postalCode": "394029",
+    "addressCountry": "RU"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": 51.639697, "longitude": 39.236068},
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00",
+    "closes": "22:00"
+  }],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "23", "bestRating": "5"},
+  "sameAs": ["https://vk.com/zaryabarbershop", "https://2gis.ru/voronezh/firm/70000001088233681"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2318181b'/%3E%3Cpath d='M8 20a8 8 0 0 1 16 0M6 23h20' stroke='%23fafafa' stroke-width='2.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<script>
+  // Тема выставляется до отрисовки, чтобы страница не мигала
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<style>
+  /* Макет: спокойный интерфейс в духе shadcn/ui — нейтральная палитра zinc, тонкие рамки, карточки только там, где это отдельный объект.
+     Единственный цвет бренда — кобальт синей плитки из зала «Зари». */
+  :root{
+    --accent:#2445b5;
+    --accent-soft:rgba(36,69,181,.1);
+    --background:#ffffff;
+    --foreground:#09090b;
+    --card:#ffffff;
+    --muted:#f4f4f5;
+    --muted-foreground:#71717a;
+    --border:#e4e4e7;
+    --primary:#18181b;
+    --primary-foreground:#fafafa;
+    --ring:#a1a1aa;
+    --star:#f59e0b;
+    --open:#16a34a;
+    --grid:rgba(9,9,11,.06);
+    --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+    --radius:12px;
+    --wrap:1160px;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --background:#09090b;--foreground:#fafafa;--card:#0c0c0e;--muted:#18181b;--muted-foreground:#a1a1aa;
+      --border:#27272a;--primary:#fafafa;--primary-foreground:#18181b;--ring:#52525b;--star:#fbbf24;--open:#22c55e;
+      --grid:rgba(250,250,250,.05);--accent:#8ea8ff;--accent-soft:rgba(142,168,255,.14);color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --background:#09090b;--foreground:#fafafa;--card:#0c0c0e;--muted:#18181b;--muted-foreground:#a1a1aa;
+    --border:#27272a;--primary:#fafafa;--primary-foreground:#18181b;--ring:#52525b;--star:#fbbf24;--open:#22c55e;
+    --grid:rgba(250,250,250,.05);--accent:#8ea8ff;--accent-soft:rgba(142,168,255,.14);color-scheme:dark;
+  }
+
+  ::selection{background:var(--accent-soft);color:var(--foreground)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+  body{background:var(--background);color:var(--foreground);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  svg{display:block;flex:none}
+  :focus-visible{outline:2px solid var(--ring);outline-offset:2px;border-radius:6px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+  h1,h2,h3{text-wrap:balance;letter-spacing:-.025em;font-weight:600}
+  .mono{font-family:var(--mono)}
+
+  /* ---------- кнопки и бейджи ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;height:40px;padding:0 16px;
+    border-radius:8px;font:500 14px/1 var(--sans);white-space:nowrap;cursor:pointer;
+    border:1px solid transparent;transition:background .15s,color .15s,border-color .15s,opacity .15s;
+  }
+  .btn svg{width:16px;height:16px}
+  .btn-lg{height:44px;padding:0 20px;font-size:15px}
+  .btn-primary{background:var(--primary);color:var(--primary-foreground)}
+  .btn-primary:hover{opacity:.9}
+  .btn-outline{background:var(--background);border-color:var(--border);color:var(--foreground)}
+  .btn-outline:hover{background:var(--muted)}
+  .btn-ghost{background:transparent;color:var(--foreground)}
+  .btn-ghost:hover{background:var(--muted)}
+  .btn-icon{width:40px;padding:0}
+  .badge{
+    display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 12px;border-radius:999px;
+    border:1px solid var(--border);background:var(--background);font-size:13px;font-weight:500;color:var(--foreground);
+  }
+  .badge svg{width:14px;height:14px;color:var(--star)}
+  .badge-muted{background:var(--muted);border-color:transparent;color:var(--muted-foreground);height:24px;padding:0 10px;font-size:12px}
+
+  /* ---------- шапка ---------- */
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--background)}
+  .header{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
+    background:var(--background); /* сплошной фон, иначе логотип со смешиванием цветов даёт плашку поверх фото */
+    border-bottom:1px solid var(--border);
+  }
+  .header .wrap{display:flex;align-items:center;gap:24px;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;letter-spacing:-.01em}
+  .logo-mark{width:30px;height:30px;border-radius:8px;background:var(--primary);color:var(--primary-foreground);display:grid;place-items:center}
+  .logo-mark svg{width:18px;height:18px}
+  .logo small{font-weight:400;color:var(--muted-foreground);font-size:13px}
+  /* Фирменный логотип вырезан из прайс-листа «Зари» в 2ГИС (белый на чёрном) */
+  .brand{
+    --k:.27;display:block;flex:none;
+    width:calc(235px * var(--k));height:calc(176px * var(--k));
+    background:url("https://i4.photo.2gis.com/photo-gallery/8086721f-eed5-4f40-970b-1410506e6792.jpg") no-repeat
+      calc(-189px * var(--k)) calc(-170px * var(--k)) / calc(607px * var(--k)) auto;
+    filter:invert(1);mix-blend-mode:multiply;
+  }
+  :root[data-theme="dark"] .brand{filter:none;mix-blend-mode:screen}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand{filter:none;mix-blend-mode:screen}}
+  .brand-lg{--k:.5}
+  .nav{display:flex;gap:4px;margin-left:12px}
+  .nav a{padding:8px 12px;border-radius:8px;font-size:14px;color:var(--muted-foreground);transition:color .15s,background .15s}
+  .nav a:hover{color:var(--foreground);background:var(--muted)}
+  .header-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+  .theme-toggle .moon{display:none}
+  :root[data-theme="dark"] .theme-toggle .sun{display:none}
+  :root[data-theme="dark"] .theme-toggle .moon{display:block}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) .theme-toggle .sun{display:none}
+    :root:not([data-theme="light"]) .theme-toggle .moon{display:block}
+  }
+
+  /* ---------- первый экран ---------- */
+  /* Сцена во весь блок: фото зала, затемнение слева и снизу. Цвета тут постоянные, потому что под ними всегда тёмное фото. */
+  .hero{padding-top:16px}
+  .hero-stage{
+    position:relative;isolation:isolate;overflow:hidden;border-radius:20px;
+    min-height:clamp(560px,76vh,700px);display:flex;align-items:flex-end;
+    background:#0b0b0d;color:#fafafa;
+  }
+  .hero-bg{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;z-index:-2;
+    animation:hero-zoom 1.8s cubic-bezier(.2,.8,.2,1) both;
+  }
+  .hero-stage::before{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:
+      linear-gradient(90deg,rgba(9,9,11,.9) 0%,rgba(9,9,11,.66) 40%,rgba(9,9,11,.1) 78%),
+      linear-gradient(0deg,rgba(9,9,11,.75) 0%,transparent 50%);
+  }
+  .hero-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:40px;width:100%;padding:clamp(28px,5vw,64px)}
+  .hero-text{min-width:0;max-width:640px}
+  .hero-text > *{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+  .hero-text > :nth-child(2){animation-delay:.08s}
+  .hero-text > :nth-child(3){animation-delay:.16s}
+  .hero-text > :nth-child(4){animation-delay:.24s}
+  .hero-text > :nth-child(5){animation-delay:.32s}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}}
+  @keyframes hero-zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+  .badge-glass{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fafafa;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .hero-city{
+    position:absolute;top:clamp(16px,3vw,32px);right:clamp(16px,3vw,32px);
+    height:34px;padding:0 14px;font-size:14px;animation:rise .7s .2s cubic-bezier(.2,.8,.2,1) both;
+  }
+  .hero-city svg{color:#fafafa}
+  .hero h1{font-size:clamp(40px,6.2vw,78px);line-height:1;letter-spacing:-.045em;margin:22px 0 20px;max-width:12ch}
+  .hero h1 span{color:rgba(250,250,250,.58)}
+  .lead{font-size:clamp(16px,1.4vw,18px);max-width:34em;margin-bottom:32px}
+  .hero .lead{color:rgba(250,250,250,.8)}
+  .cta{display:flex;flex-wrap:wrap;gap:10px}
+  .btn-light{background:#fafafa;color:#09090b}
+  .btn-light:hover{background:#e4e4e7}
+  .btn-glass{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.24);color:#fafafa;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .btn-glass:hover{background:rgba(255,255,255,.16)}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:32px;font-size:14px;color:rgba(250,250,250,.72)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+  .hero-meta svg{width:16px;height:16px}
+
+  /* цифры под первым экраном */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:16px;border:1px solid var(--border);border-radius:var(--radius)}
+  .stat{padding:22px 24px;min-width:0}
+  .stat + .stat{border-left:1px solid var(--border)}
+  .stat b{display:flex;align-items:center;gap:6px;font-size:30px;font-weight:600;letter-spacing:-.035em;line-height:1.1;font-variant-numeric:tabular-nums}
+  .stat b svg{width:20px;height:20px;color:var(--star)}
+  .stat span{font-size:13px;color:var(--muted-foreground)}
+
+  /* карточка записи на фото */
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius)}
+  .book{
+    width:300px;padding:20px;color:var(--foreground);
+    box-shadow:0 1px 2px rgba(0,0,0,.08),0 24px 48px -20px rgba(0,0,0,.5);
+    animation:rise .8s .4s cubic-bezier(.2,.8,.2,1) both;
+  }
+  .book .book-head{padding-bottom:16px;flex-direction:column-reverse;gap:12px}
+  .book .book-foot{padding-top:14px}
+  .book-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+  .book-head h2{font-size:18px;letter-spacing:-.015em}
+  .book-head p{font-size:14px;color:var(--muted-foreground);margin-top:2px}
+  .status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;white-space:nowrap;padding:4px 10px;border-radius:999px;background:var(--muted)}
+  .status i{width:8px;height:8px;border-radius:50%;background:var(--muted-foreground)}
+  .status.is-open i{background:var(--open);box-shadow:0 0 0 3px color-mix(in srgb,var(--open) 22%,transparent)}
+  .book-list{list-style:none;padding:8px 0}
+  .book-list li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;font-size:15px}
+  .book-list li + li{border-top:1px dashed var(--border)}
+  .book-list .mono{font-size:14px;color:var(--muted-foreground);white-space:nowrap}
+  .book-foot{display:grid;gap:8px;padding-top:16px;border-top:1px solid var(--border)}
+  .book-foot .btn{width:100%}
+  .book-note{font-size:12px;color:var(--muted-foreground);text-align:center;margin-top:4px}
+
+  /* ---------- общие секции ---------- */
+  .section{padding:96px 0;border-bottom:1px solid var(--border)}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+  .section-head > div{min-width:0}
+  .label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+  .cta-band{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;padding:24px 28px;margin-top:8px;background:var(--accent-soft);border-color:transparent}
+  .cta-band h3{font-size:20px;letter-spacing:-.02em}
+  .cta-band p{font-size:15px;color:var(--muted-foreground)}
+  .section-head h2{font-size:clamp(28px,3.6vw,40px);line-height:1.1}
+  .section-head p{color:var(--muted-foreground);max-width:30em;font-size:15px}
+
+  /* ---------- преимущества ---------- */
+  .features{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .feature{padding:28px 24px;min-width:0}
+  .feature + .feature{border-left:1px solid var(--border)}
+  .feature .ico{width:36px;height:36px;border-radius:8px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;margin-bottom:20px}
+  .feature .ico svg{width:18px;height:18px}
+  .feature h3{font-size:16px;letter-spacing:-.01em;margin-bottom:6px}
+  .feature p{font-size:14px;color:var(--muted-foreground)}
+
+  /* ---------- фото: мозаика и просмотр ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:12px}
+  .g-item{
+    position:relative;padding:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;
+    background:var(--muted);cursor:zoom-in;min-width:0;
+  }
+  .g-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+  .g-item:hover img{transform:scale(1.04)}
+  .g-item span{
+    position:absolute;left:12px;bottom:12px;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:500;
+    background:rgba(9,9,11,.62);color:#fafafa;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  }
+  .g-big{grid-column:span 2;grid-row:span 2}
+  .lightbox{
+    border:0;padding:0;background:transparent;max-width:min(92vw,1100px);max-height:90vh;margin:auto;overflow:visible;
+  }
+  .lightbox::backdrop{background:rgba(9,9,11,.86);backdrop-filter:blur(4px)}
+  .lightbox img{display:block;max-width:min(92vw,1100px);max-height:86vh;width:auto;height:auto;border-radius:12px}
+  .lightbox button{
+    position:fixed;top:max(16px,env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));
+    width:40px;height:40px;border-radius:999px;border:0;cursor:pointer;background:#fafafa;color:#09090b;display:grid;place-items:center;
+  }
+  .lightbox button svg{width:18px;height:18px}
+
+  /* ---------- цены: вкладки ---------- */
+  .tabs-list{display:inline-flex;gap:4px;padding:4px;border-radius:10px;background:var(--muted);margin-bottom:24px;max-width:100%;overflow-x:auto}
+  .tab{
+    height:34px;padding:0 14px;border-radius:7px;border:0;background:transparent;cursor:pointer;
+    font:500 14px/1 var(--sans);color:var(--muted-foreground);white-space:nowrap;transition:background .15s,color .15s,box-shadow .15s;
+  }
+  .tab[aria-selected="true"]{background:var(--background);color:var(--foreground);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .price-table{width:100%}
+  .price-row{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:24px;padding:18px 20px}
+  .price-row + .price-row{border-top:1px solid var(--border)}
+  .price-row:hover{background:var(--muted)}
+  .price-name{font-weight:500;min-width:0}
+  .price-name small{display:block;font-weight:400;font-size:13px;color:var(--muted-foreground)}
+  .price-val{font-family:var(--mono);font-size:15px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .price-go{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;color:var(--muted-foreground);transition:background .15s,color .15s}
+  .price-row:hover .price-go{background:var(--background);color:var(--foreground)}
+  .price-go svg{width:16px;height:16px}
+  .price-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-size:14px;color:var(--muted-foreground)}
+  .pay{display:flex;flex-wrap:wrap;gap:6px}
+
+  /* ---------- мастера ---------- */
+  .masters{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .master{padding:24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;min-width:0;transition:border-color .2s,transform .2s}
+  .master:hover{border-color:var(--ring);transform:translateY(-2px)}
+  .avatar{
+    width:48px;height:48px;border-radius:50%;display:grid;place-items:center;flex:none;
+    background:var(--muted);border:1px solid var(--border);font-weight:600;font-size:17px;
+  }
+  .master-photo{
+    width:96px;height:96px;border-radius:50%;object-fit:cover;display:block;background:var(--muted);
+    box-shadow:0 0 0 4px var(--background),0 0 0 5px var(--border);
+  }
+  .master h3{font-size:17px;letter-spacing:-.01em;line-height:1.3}
+  .master-role{font-size:13px;color:var(--muted-foreground)}
+  .master-rating{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted-foreground);font-variant-numeric:tabular-nums}
+  .master-rating .stars svg{width:14px;height:14px}
+  .master .btn{width:100%;margin-top:auto}
+
+  /* ---------- отзывы ---------- */
+  .rating{display:flex;align-items:center;gap:14px}
+  .rating b{font-size:44px;font-weight:600;letter-spacing:-.04em;line-height:1}
+  .stars{display:flex;gap:2px;color:var(--star)}
+  .stars svg{width:16px;height:16px}
+  .rating p{font-size:13px;color:var(--muted-foreground);margin-top:4px}
+  .rating a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--border)}
+  .reviews{columns:3 300px;column-gap:16px}
+  .review{break-inside:avoid;margin-bottom:16px;padding:22px;display:flex;flex-direction:column;gap:16px}
+  .review p{font-size:15px;line-height:1.6}
+  .review footer{display:flex;align-items:center;gap:12px}
+  .review .avatar{width:36px;height:36px;font-size:14px}
+  .review footer strong{display:block;font-weight:500;font-size:14px}
+  .review footer span{font-size:13px;color:var(--muted-foreground)}
+  .review .stars svg{width:14px;height:14px}
+
+  /* ---------- вопросы ---------- */
+  .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+  .faq-grid .section-head{flex-direction:column;align-items:flex-start;margin-bottom:0}
+  .accordion details{border-bottom:1px solid var(--border)}
+  .accordion details:first-child{border-top:1px solid var(--border)}
+  .accordion summary{
+    list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:18px 0;font-weight:500;font-size:16px;
+  }
+  .accordion summary::-webkit-details-marker{display:none}
+  .accordion summary:hover{text-decoration:underline;text-underline-offset:4px}
+  .accordion summary svg{width:16px;height:16px;color:var(--muted-foreground);transition:transform .2s}
+  .accordion details[open] summary svg{transform:rotate(180deg)}
+  .accordion details p{padding:0 32px 20px 0;color:var(--muted-foreground);font-size:15px}
+
+  /* ---------- контакты ---------- */
+  .contacts{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px}
+  .info{padding:8px 24px}
+  .facade{display:block;width:100%;max-width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin-top:16px;background:var(--muted)}
+  .info-row{display:grid;grid-template-columns:20px 1fr;gap:14px;padding:18px 0}
+  .info-row + .info-row{border-top:1px solid var(--border)}
+  .info-row svg{width:18px;height:18px;margin-top:2px;color:var(--muted-foreground)}
+  .info-row small{display:block;font-size:13px;color:var(--muted-foreground)}
+  .info-row strong{font-weight:500}
+  .info-row a strong:hover{text-decoration:underline;text-underline-offset:3px}
+  .info-links{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 20px 34px}
+  .map{position:relative;min-height:420px;overflow:hidden}
+  .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .map-fallback{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:10px;color:var(--muted-foreground);font-size:14px;background:var(--muted)}
+  .map-fallback svg{width:28px;height:28px}
+  .map .btn{position:absolute;left:16px;bottom:16px;z-index:2;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+
+  /* ---------- финал и подвал ---------- */
+  .final{padding:96px 0}
+  .final-box{padding:56px 40px;text-align:center;display:grid;justify-items:center;gap:16px;position:relative;overflow:hidden}
+  .final-box h2{font-size:clamp(28px,4vw,44px);line-height:1.1;max-width:18ch}
+  .final-box p{color:var(--muted-foreground);max-width:32em}
+  .final-box .cta{justify-content:center;margin-top:8px}
+  .footer{border-top:1px solid var(--border);padding-block:28px 32px;font-size:13px;color:var(--muted-foreground)}
+  .footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+  .footer a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--border)}
+  .footer a:hover{color:var(--foreground)}
+
+  .mobile-bar{display:none}
+
+  /* ---------- адаптив ---------- */
+  @media (max-width:980px){
+    .nav{display:none}
+    .hero-inner{grid-template-columns:1fr;gap:28px}
+    .book{width:min(360px,100%)}
+    .stats{grid-template-columns:1fr 1fr}
+    .stat:nth-child(3){border-left:0}
+    .stat:nth-child(n+3){border-top:1px solid var(--border)}
+    .features{grid-template-columns:1fr 1fr}
+    .feature:nth-child(3){border-left:0}
+    .feature:nth-child(n+3){border-top:1px solid var(--border)}
+    .masters{grid-template-columns:1fr 1fr}
+    .faq-grid,.contacts{grid-template-columns:1fr;gap:32px}
+  }
+  @media (max-width:640px){
+    body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+    .logo small,.header-book{display:none}
+    .hero{padding-top:12px}
+    .hero-stage{min-height:0;border-radius:16px}
+    .hero-stage::before{background:linear-gradient(0deg,rgba(9,9,11,.94) 0%,rgba(9,9,11,.82) 55%,rgba(9,9,11,.25) 100%)}
+    .hero-bg{object-position:50% 30%}
+    .hero-inner{padding:200px 20px 20px}
+    .book{width:100%}
+    .stat{padding:16px 18px}
+    .stat b{font-size:24px}
+    .cta{flex-direction:column}
+    .cta .btn{width:100%}
+    .section,.final{padding:64px 0}
+    .features{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:8px}
+    .feature + .feature{border-left:0;border-top:1px solid var(--border)}
+    .price-row{grid-template-columns:1fr auto;padding:16px 14px;gap:16px}
+    .price-go{display:none}
+    .map{min-height:320px}
+    .final-box{padding:40px 20px}
+    .mobile-bar{
+      display:grid;grid-template-columns:1fr auto;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;
+      padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+      background:color-mix(in srgb,var(--background) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+      border-top:1px solid var(--border);
+    }
+    .mobile-bar .btn{height:48px}
+    .mobile-bar .btn-icon{width:48px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-logo" viewBox="0 0 24 24"><path d="M5 15a7 7 0 0 1 14 0M3 18.5h18M8 21.5h8M12 4v2M5.6 6.6l1.4 1.4M18.4 6.6L17 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M8 7h9v9"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 16V11l2-5h10l2 5v5z"/><path d="M3 11h18M5 16v3M19 16v3"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.6 7.6L20 19M8.6 16.4L20 5"/></g></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></symbol>
+    <symbol id="i-vk" viewBox="0 0 24 24"><path fill="currentColor" d="M12.8 17.5C6.6 17.5 3.1 13.3 3 6.5h3.1c.1 5 2.3 7.1 4.1 7.5V6.5h2.9v4.3c1.8-.2 3.6-2.2 4.3-4.3h2.9a8.6 8.6 0 0 1-3.9 5.6 9 9 0 0 1 4.6 5.4h-3.2a5.6 5.6 0 0 0-4.7-4v4z"/></symbol>
+  </defs>
+</svg>
+
+<header class="header">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Заря — наверх">
+      <span class="brand" role="img" aria-label="Заря"></span>
+      <small>мужская парикмахерская</small>
+    </a>
+    <nav class="nav">
+      <a href="#photos">Фото</a>
+      <a href="#prices">Цены</a>
+      <a href="#masters">Мастера</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-right">
+      <a class="btn btn-ghost header-book" href="tel:+74732491718">+7 (473) 249-17-18</a>
+      <button class="btn btn-ghost btn-icon theme-toggle" id="themeToggle" type="button" aria-label="Сменить тему">
+        <svg class="sun"><use href="#i-sun"/></svg><svg class="moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn-primary" href="https://n1040202.yclients.com/company/963877/personal/select-master" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-stage">
+        <img class="hero-bg" src="https://i6.photo.2gis.com/photo-gallery/3915637b-b56b-469f-876b-ec65784ef9b2.jpg" alt="Зал «Зари»: ряд барберских кресел и синяя плитка" fetchpriority="high">
+        <span class="badge badge-glass hero-city"><svg><use href="#i-pin"/></svg>Воронеж</span>
+        <div class="hero-inner">
+          <div class="hero-text">
+            <a class="badge badge-glass" href="#reviews">
+              <svg><use href="#i-star"/></svg>5,0 в 2ГИС · 23 оценки
+            </a>
+            <h1>Приведём в порядок.</h1>
+            <p class="lead">Мужские и детские стрижки, борода и бритьё. Уютная атмосфера, мастера, которые знают своё дело, и индивидуальный подход к каждому.</p>
+            <div class="cta">
+              <a class="btn btn-light btn-lg" href="https://n1040202.yclients.com/company/963877/personal/select-master" target="_blank" rel="noopener">
+                <svg><use href="#i-cal"/></svg>Записаться онлайн
+              </a>
+              <a class="btn btn-glass btn-lg" href="#prices">Посмотреть цены</a>
+            </div>
+            <div class="hero-meta">
+              <span><svg><use href="#i-pin"/></svg>Ленинский пр., 20/1, 2 этаж</span>
+              <span><svg><use href="#i-clock"/></svg>Ежедневно 11:00–22:00</span>
+            </div>
+          </div>
+
+        <aside class="card book" aria-label="Запись">
+          <div class="book-head">
+            <div>
+              <h2>Запись к мастеру</h2>
+              <p>Выберите мастера и время</p>
+            </div>
+            <span class="status" id="status"><i></i><span>Ежедневно 11–22</span></span>
+          </div>
+          <div class="book-foot">
+            <a class="btn btn-primary btn-lg" href="https://n1040202.yclients.com/company/963877/personal/select-master" target="_blank" rel="noopener">Выбрать время <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </aside>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b>5,0 <svg><use href="#i-star"/></svg></b><span>рейтинг в 2ГИС</span></div>
+        <div class="stat"><b>323</b><span>отзыва о мастерах в YClients</span></div>
+        <div class="stat"><b>7 дней</b><span>в неделю, с 11 до 22</span></div>
+        <div class="stat"><b>11 мест</b><span>на парковке рядом</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="features">
+        <div class="feature">
+          <div class="ico"><svg><use href="#i-chat"/></svg></div>
+          <h3>Уютная атмосфера</h3>
+          <p>Душевные разговоры, хороший юмор и Wi-Fi, пока ждёте.</p>
+        </div>
+        <div class="feature">
+          <div class="ico"><svg><use href="#i-scissors"/></svg></div>
+          <h3>Профессионалы</h3>
+          <p>К нашим мастерам ходят годами и приводят сыновей.</p>
+        </div>
+        <div class="feature">
+          <div class="ico"><svg><use href="#i-user"/></svg></div>
+          <h3>Индивидуальный подход</h3>
+          <p>Подскажем, что подойдёт именно вам, и честно скажем, что нет.</p>
+        </div>
+        <div class="feature">
+          <div class="ico"><svg><use href="#i-car"/></svg></div>
+          <h3>Удобно добраться</h3>
+          <p>Вход с улицы и парковка рядом на 11 мест.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Фото</div>
+          <h2>Как у нас</h2>
+        </div>
+        <p>Синяя плитка, тёплый свет и инструмент, за которым следят. Нажмите на фото, чтобы рассмотреть.</p>
+      </div>
+      <div class="gallery">
+        <button class="g-item g-big" type="button"><img src="https://i0.photo.2gis.com/photo-gallery/8fd16cfb-45e7-47d1-8518-bc777d677626.jpg" alt="Мастер стрижёт клиента в зале" loading="lazy"><span>Зал</span></button>
+        <button class="g-item" type="button"><img src="https://i6.photo.2gis.com/photo-gallery/35588d48-80e0-469f-9de1-6665094cccd8.jpg" alt="Зона ожидания с креслами" loading="lazy"><span>Зона ожидания</span></button>
+        <button class="g-item" type="button"><img src="https://i3.photo.2gis.com/photo-gallery/62e704f6-e8d1-4235-b611-7311174cff67.jpg" alt="Инструменты барбера на рабочем месте" loading="lazy"><span>Инструмент</span></button>
+        <button class="g-item" type="button"><img src="https://i5.photo.2gis.com/photo-gallery/4d78dd76-38fd-4702-a2ca-736d4036e9cc.jpg" alt="Детская стрижка, результат" loading="lazy"><span>Детская стрижка</span></button>
+        <button class="g-item" type="button"><img src="https://i9.photo.2gis.com/photo-gallery/fbb9d621-8c53-4b24-bafc-a7b39f61ee19.jpg" alt="Мастер на рабочем месте" loading="lazy"><span>Рабочее место</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="prices">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Прайс</div>
+          <h2>Услуги и цены</h2>
+        </div>
+        <p>Актуальные цены и свободные окна мастеров всегда видны при онлайн-записи.</p>
+      </div>
+
+      <div class="tabs-list" role="tablist">
+        <button class="tab" role="tab" id="tab-hair" aria-controls="panel-hair" aria-selected="true">Стрижки</button>
+        <button class="tab" role="tab" id="tab-beard" aria-controls="panel-beard" aria-selected="false" tabindex="-1">Борода и бритьё</button>
+        <button class="tab" role="tab" id="tab-care" aria-controls="panel-care" aria-selected="false" tabindex="-1">Уход и камуфляж</button>
+      </div>
+
+      <!-- Прайс и длительность сверены с онлайн-записью YClients -->
+      <div class="card price-table" role="tabpanel" id="panel-hair" aria-labelledby="tab-hair">
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Мужская стрижка<small>1 ч · консультация, мытьё головы, укладка</small></span><span class="price-val">1 600 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Детская стрижка<small>от 2 до 7 лет · 1 ч</small></span><span class="price-val">1 200 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Стрижка под машинку<small>несколько насадок, плавный переход · 45 мин</small></span><span class="price-val">1 200 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Стрижка под машинку<small>одна насадка · 30 мин</small></span><span class="price-val">500 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Окантовка с подбриванием<small>30 мин</small></span><span class="price-val">500 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Укладка волос<small>15 мин</small></span><span class="price-val">500 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Стрижка усов или бровей<small>15 мин</small></span><span class="price-val">400 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+      </div>
+
+      <div class="card price-table" role="tabpanel" id="panel-beard" aria-labelledby="tab-beard" hidden>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Традиционное бритьё<small>голова или лицо · 1 ч</small></span><span class="price-val">1 500 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Моделирование бороды<small>45 мин</small></span><span class="price-val">1 100 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Коррекция бороды<small>30 мин</small></span><span class="price-val">800 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Бритьё головы шейвером<small>30 мин</small></span><span class="price-val">800 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+      </div>
+
+      <div class="card price-table" role="tabpanel" id="panel-care" aria-labelledby="tab-care" hidden>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Камуфляж седины, голова<small>45 мин</small></span><span class="price-val">1 500 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Камуфляж седины, борода<small>45 мин</small></span><span class="price-val">1 100 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+        <a class="price-row" href="https://n1040202.yclients.com/company/963877/personal/select-services" target="_blank" rel="noopener"><span class="price-name">Чёрная маска<small>30 мин</small></span><span class="price-val">700 ₽</span><span class="price-go"><svg><use href="#i-arrow-ur"/></svg></span></a>
+      </div>
+
+      <div class="price-foot">
+        <span>Способы оплаты</span>
+        <div class="pay">
+          <span class="badge badge-muted">Карта</span><span class="badge badge-muted">Наличные</span><span class="badge badge-muted">Перевод</span><span class="badge badge-muted">QR-код</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="masters">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Команда</div>
+          <h2>Мастера</h2>
+        </div>
+        <p>Выберите мастера и запишитесь сразу к нему. Число отзывов взято из YClients.</p>
+      </div>
+      <div class="masters">
+        <article class="card master">
+          <img class="master-photo" src="https://assets.yclients.com/masters/sm/5/54/54071d6a34505f0_20240518192920.png" alt="Александр Лютиков" width="96" height="96" loading="lazy">
+          <div><h3>Александр Лютиков</h3><div class="master-role">Парикмахер</div></div>
+          <div class="master-rating"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>135 отзывов</div>
+          <a class="btn btn-outline" href="https://n1040202.yclients.com/company/963877/personal/select-services?o=m2899131" target="_blank" rel="noopener" aria-label="Записаться к Александру Лютикову">Записаться <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card master">
+          <img class="master-photo" src="https://assets.yclients.com/masters/sm/4/4f/4fb7fb59b6908af_20240518192901.png" alt="Владимир Закопайлов" width="96" height="96" loading="lazy">
+          <div><h3>Владимир Закопайлов</h3><div class="master-role">Парикмахер</div></div>
+          <div class="master-rating"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>71 отзыв</div>
+          <a class="btn btn-outline" href="https://n1040202.yclients.com/company/963877/personal/select-services?o=m2899158" target="_blank" rel="noopener" aria-label="Записаться к Владимиру Закопайлову">Записаться <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card master">
+          <img class="master-photo" src="https://assets.yclients.com/masters/sm/d/d1/d1ebc0d6999c142_20260303154553.jpeg" alt="Александр Игрунов" width="96" height="96" loading="lazy">
+          <div><h3>Александр Игрунов</h3><div class="master-role">Парикмахер</div></div>
+          <div class="master-rating"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>62 отзыва</div>
+          <a class="btn btn-outline" href="https://n1040202.yclients.com/company/963877/personal/select-services?o=m2925779" target="_blank" rel="noopener" aria-label="Записаться к Александру Игрунову">Записаться <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card master">
+          <img class="master-photo" src="https://assets.yclients.com/masters/sm/9/90/9054097291137ef_20260303160645.jpeg" alt="Дмитрий Мандровский" width="96" height="96" loading="lazy">
+          <div><h3>Дмитрий Мандровский</h3><div class="master-role">Мастер</div></div>
+          <div class="master-rating"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>55 отзывов</div>
+          <a class="btn btn-outline" href="https://n1040202.yclients.com/company/963877/personal/select-services?o=m3800164" target="_blank" rel="noopener" aria-label="Записаться к Дмитрию Мандровскому">Записаться <svg><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Отзывы</div>
+          <h2>Что говорят клиенты</h2>
+        </div>
+        <div class="rating">
+          <b>5,0</b>
+          <div>
+            <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <p>23 оценки, 18 отзывов в <a href="https://2gis.ru/voronezh/firm/70000001088233681" target="_blank" rel="noopener">2ГИС</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Лучший состав барберов на левом берегу, возможно и на правом, если вы хотите получить идеальный сервис и лучшую стрижку / бороду, выбирайте Зарю!!!</p>
+          <footer><span class="avatar">С</span><div><strong>Саша К.</strong><span>июнь 2024</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Был у мастера Дмитрия. Все качественно и оперативно. С душевными разговорами и хорошим юмором. Отлично провел время. Рекомендую 👍</p>
+          <footer><span class="avatar">З</span><div><strong>Знакомый Человек</strong><span>июнь 2026</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Стригусь с сыном у Александра Лютикова уже 6 лет очень классный мастер иногда экспериментируем с прическами и всегда оказывает качественную консультацию и рассказывает если не подойдет всегда доволен остаюсь рекомендую</p>
+          <footer><span class="avatar">Е</span><div><strong>Евгений Ш.</strong><span>апрель 2025</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Раньше я так не обращал внимания на стрижку, и зря. Теперь, когда регулярно хожу к вам в барбершоп, намного увереннее себя чувствую.</p>
+          <footer><span class="avatar">М</span><div><strong>Максим Б.</strong><span>июнь 2024</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Очень понравилось 👍, атмосферное место, парни горят на работе, творят волшебство с нашими мужчинами. Сын в восторге!!!</p>
+          <footer><span class="avatar">Н</span><div><strong>Наталья Ш.</strong><span>сентябрь 2024</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Прекрасный мастер Дмитрий. Маленький клиент доволен. Выполнил все пожелания. Теперь будем записываться к нему на постоянной основе 😇</p>
+          <footer><span class="avatar">Н</span><div><strong>Нежданный Гость</strong><span>август 2025</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Мастер Александр, подстригал сына (10 лет); всё здорово! Очень доволен стрижкой; лично придём снова… Рекомедую это место</p>
+          <footer><span class="avatar">А</span><div><strong>Алексей С.</strong><span>май 2025</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Как всегда твердая 5! Спасибо большое! Очень приятно каждый раз быть у вас и результат работы всегда на отлично!</p>
+          <footer><span class="avatar">Я</span><div><strong>Яна Д.</strong><span>август 2024</span></div></footer>
+        </article>
+        <article class="card review">
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>Хожу к единственному мастеру Владимиру, человек знает свое дело</p>
+          <footer><span class="avatar">Р</span><div><strong>Роман Я.</strong><span>июнь 2024</span></div></footer>
+        </article>
+      </div>
+
+      <div class="card cta-band">
+        <div>
+          <h3>Хотите так же?</h3>
+          <p>Запишитесь к мастеру из отзывов. Свободное время видно сразу.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="https://n1040202.yclients.com/company/963877/personal/select-master" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>Записаться онлайн</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap faq-grid">
+      <div class="section-head">
+        <div>
+          <div class="label">Вопросы</div>
+          <h2>Частые вопросы</h2>
+        </div>
+        <p>Не нашли ответ? Позвоните или напишите в WhatsApp.</p>
+      </div>
+      <div class="accordion">
+        <details open>
+          <summary>Как записаться?<svg><use href="#i-chev"/></svg></summary>
+          <p>Онлайн через YClients: выберите мастера, услугу и свободное время. Или позвоните по номеру +7 (473) 249-17-18, или напишите в WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Стрижёте детей?<svg><use href="#i-chev"/></svg></summary>
+          <p>Да. Детская стрижка для ребят от 2 до 7 лет стоит 1 200 ₽. Многие клиенты приходят к нам вместе с сыновьями.</p>
+        </details>
+        <details>
+          <summary>Где припарковаться?<svg><use href="#i-chev"/></svg></summary>
+          <p>Рядом со зданием есть парковка на 11 мест. Вход с улицы, мы на втором этаже.</p>
+        </details>
+        <details>
+          <summary>Как можно оплатить?<svg><use href="#i-chev"/></svg></summary>
+          <p>Картой, наличными, переводом с карты или по QR-коду.</p>
+        </details>
+        <details>
+          <summary>Когда вы работаете?<svg><use href="#i-chev"/></svg></summary>
+          <p>Каждый день, без выходных, с 11:00 до 22:00.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacts">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Контакты</div>
+          <h2>Как нас найти</h2>
+        </div>
+        <p>Левобережный район, рядом с Ленинским проспектом.</p>
+      </div>
+      <div class="contacts">
+        <div class="card info">
+          <img class="facade" src="https://i7.photo.2gis.com/photo-gallery/429d9f4d-15fb-45e3-9e0a-8d67dd410741.jpg" alt="Фасад с вывеской «Мужская парикмахерская»" loading="lazy">
+          <div class="info-row"><svg><use href="#i-pin"/></svg><div><small>Адрес</small><strong>Ленинский проспект, 20/1, 2 этаж</strong><small>Воронеж, 394029</small></div></div>
+          <div class="info-row"><svg><use href="#i-clock"/></svg><div><small>Часы работы</small><strong>Ежедневно 11:00–22:00</strong></div></div>
+          <div class="info-row"><svg><use href="#i-phone"/></svg><div><small>Телефон</small><a href="tel:+74732491718"><strong>+7 (473) 249-17-18</strong></a></div></div>
+          <div class="info-links">
+            <a class="btn btn-outline" href="https://wa.me/79009259160" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+            <a class="btn btn-outline" href="https://vk.com/zaryabarbershop" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg>ВКонтакте</a>
+          </div>
+        </div>
+        <div class="card map">
+          <div class="map-fallback"><svg><use href="#i-pin"/></svg>Ленинский проспект, 20/1</div>
+          <iframe title="Заря на карте" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=39.236068%2C51.639697&amp;z=16&amp;pt=39.236068%2C51.639697%2Cpm2dgl&amp;l=map"></iframe>
+          <a class="btn btn-primary" href="https://2gis.ru/voronezh/firm/70000001088233681" target="_blank" rel="noopener">Маршрут в 2ГИС <svg><use href="#i-arrow-ur"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <div class="card final-box">
+        <span class="brand brand-lg" role="img" aria-label="Заря"></span>
+        <h2>Запишитесь к своему мастеру</h2>
+        <p>Свободное время видно сразу. Запись занимает около минуты.</p>
+        <div class="cta">
+          <a class="btn btn-primary btn-lg" href="https://n1040202.yclients.com/company/963877/personal/select-master" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>Записаться онлайн</a>
+          <a class="btn btn-outline btn-lg" href="https://wa.me/79009259160" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Написать в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> «Заря», мужская парикмахерская · ИП Лютиков А. С.</span>
+    <span>Рейтинг и отзывы: <a href="https://2gis.ru/voronezh/firm/70000001088233681" target="_blank" rel="noopener">2ГИС</a></span>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <img alt="">
+  <button type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</dialog>
+
+<div class="mobile-bar">
+  <a class="btn btn-primary" href="https://n1040202.yclients.com/company/963877/personal/select-master" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>Записаться онлайн</a>
+  <a class="btn btn-outline btn-icon" href="tel:+74732491718" aria-label="Позвонить"><svg><use href="#i-phone"/></svg></a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Переключатель темы
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const root = document.documentElement;
+    const isDark = root.dataset.theme
+      ? root.dataset.theme === 'dark'
+      : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = isDark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
+  // «Открыто / Закрыто» по времени Воронежа (МСК)
+  (() => {
+    const el = document.getElementById('status');
+    const h = Number(new Intl.DateTimeFormat('ru-RU', {hour: 'numeric', hourCycle: 'h23', timeZone: 'Europe/Moscow'}).format(new Date()));
+    const open = h >= 11 && h < 22;
+    el.classList.toggle('is-open', open);
+    el.querySelector('span').textContent = open ? 'Открыто до 22:00' : 'Откроемся в 11:00';
+  })();
+
+  // Просмотр фото на весь экран
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('img');
+  document.querySelectorAll('.g-item').forEach(b => b.addEventListener('click', () => {
+    const img = b.querySelector('img');
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    lb.showModal();
+  }));
+  lb.addEventListener('click', () => lb.close());
+
+  // Вкладки в прайсе
+  const tabs = [...document.querySelectorAll('.tab')];
+  const select = tab => tabs.forEach(t => {
+    const on = t === tab;
+    t.setAttribute('aria-selected', on);
+    t.tabIndex = on ? 0 : -1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+  });
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const next = tabs[(i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+      select(next); next.focus();
+    });
+  });
+</script>
+</body>
+</html>
